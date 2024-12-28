@@ -17,6 +17,7 @@
 
 
 ---
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 🚀 Heroku Deployment
 
