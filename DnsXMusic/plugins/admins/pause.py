@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.utils.database import is_music_playing, music_off
-from DnsXMusic.utils.decorators import AdminRightsCheck
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.utils.database import is_music_playing, music_off
+from HarryXSarkar.utils.decorators import AdminRightsCheck
 
 # Commands
 PAUSE_COMMAND = get_command("PAUSE_COMMAND")
