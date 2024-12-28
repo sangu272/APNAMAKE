@@ -22,10 +22,10 @@ from config import (
     TELEGRAM_VIDEO_URL,
     adminlist,
 )
-from DnsXMusic import YouTube, app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import SUDOERS, db
-from DnsXMusic.utils.database import (
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import SUDOERS, db
+from HarryXSarkar.utils.database import (
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -36,11 +36,11 @@ from DnsXMusic.utils.database import (
     mute_on,
     set_loop,
 )
-from DnsXMusic.utils.decorators.language import languageCB
-from DnsXMusic.utils.formatters import seconds_to_min
-from DnsXMusic.utils.inline.play import stream_markup, telegram_markup
-from DnsXMusic.utils.stream.autoclear import auto_clean
-from DnsXMusic.utils.thumbnails import gen_thumb
+from HarryXSarkar.utils.decorators.language import languageCB
+from HarryXSarkar.utils.formatters import seconds_to_min
+from HarryXSarkar.utils.inline.play import stream_markup, telegram_markup
+from HarryXSarkar.utils.stream.autoclear import auto_clean
+from HarryXSarkar.utils.thumbnails import gen_thumb
 
 wrong = {}
 downvote = {}
