@@ -13,9 +13,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.utils.database.memorydatabase import get_loop, set_loop
-from DnsXMusic.utils.decorators import AdminRightsCheck
+from HarryXSarkar import app
+from HarryXSarkar.utils.database.memorydatabase import get_loop, set_loop
+from HarryXSarkar.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
