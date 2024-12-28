@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.utils.database import is_music_playing, music_on
-from DnsXMusic.utils.decorators import AdminRightsCheck
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.utils.database import is_music_playing, music_on
+from HarryXSarkar.utils.decorators import AdminRightsCheck
 
 # Commands
 RESUME_COMMAND = get_command("RESUME_COMMAND")
@@ -30,5 +30,5 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await Dns.resume_stream(chat_id)
+    await HxS.resume_stream(chat_id)
     await message.reply_text(_["admin_4"].format(message.from_user.mention))
