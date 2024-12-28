@@ -13,15 +13,15 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from DnsXMusic.utils.decorators import AdminActual, language
-from DnsXMusic.utils.formatters import int_to_alpha
+from HarryXSarkar.utils.decorators import AdminActual, language
+from HarryXSarkar.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
