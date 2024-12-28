@@ -28,11 +28,11 @@ import config
 from ..logging import LOGGER
 
 
-class DnsBot(Client):
+class HxSBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot")
         super().__init__(
-            "DnsXMusic",
+            "HarryXSarkar",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
