@@ -12,10 +12,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import YouTube, app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import db
-from DnsXMusic.utils import AdminRightsCheck, seconds_to_min
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
