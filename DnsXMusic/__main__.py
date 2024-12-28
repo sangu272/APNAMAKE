@@ -14,7 +14,7 @@ from pyrogram import idle
 import config
 from config import BANNED_USERS
 from HarryXSarkar import HELPABLE, LOGGER, app, userbot
-from HarryXSarkar.core.call import Dns
+from HarryXSarkar.core.call import HxS
 from HarryXSarkar.plugins import ALL_MODULES
 from HarryXSarkar.utils.database import get_banned_users, get_gbanned
 
