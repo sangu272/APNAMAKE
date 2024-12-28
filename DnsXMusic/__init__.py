@@ -7,11 +7,11 @@
 #
 # All rights reserved.
 
-from DnsXMusic.core.bot import DnsBot
-from DnsXMusic.core.dir import dirr
-from DnsXMusic.core.git import git
-from DnsXMusic.core.userbot import Userbot
-from DnsXMusic.misc import dbb, heroku, sudo
+from HarryXSarkar.core.bot import HxSBot
+from HarryXSarkar.core.dir import dirr
+from HarryXSarkar.core.git import git
+from HarryXSarkar.core.userbot import Userbot
+from HarryXSarkar.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
@@ -30,7 +30,7 @@ heroku()
 # Load Sudo Users from DB
 sudo()
 # Bot Client
-app = DnsBot()
+app = HxSBot()
 
 # Assistant Client
 userbot = Userbot()
