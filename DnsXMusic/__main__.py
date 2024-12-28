@@ -13,10 +13,10 @@ from pyrogram import idle
 
 import config
 from config import BANNED_USERS
-from DnsXMusic import HELPABLE, LOGGER, app, userbot
-from DnsXMusic.core.call import Dns
-from DnsXMusic.plugins import ALL_MODULES
-from DnsXMusic.utils.database import get_banned_users, get_gbanned
+from HarryXSarkar import HELPABLE, LOGGER, app, userbot
+from HarryXSarkar.core.call import Dns
+from HarryXSarkar.plugins import ALL_MODULES
+from HarryXSarkar.utils.database import get_banned_users, get_gbanned
 
 
 async def init():
@@ -32,7 +32,7 @@ async def init():
         )
         return
     if not config.SPOTIFY_CLIENT_ID and not config.SPOTIFY_CLIENT_SECRET:
-        LOGGER("DnsXMusic").warning(
+        LOGGER("HarryXSarkar").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
     try:
@@ -51,14 +51,14 @@ async def init():
         if hasattr(imported_module, "__MODULE__") and imported_module.__MODULE__:
             if hasattr(imported_module, "__HELP__") and imported_module.__HELP__:
                 HELPABLE[imported_module.__MODULE__.lower()] = imported_module
-    LOGGER("DnsXMusic.plugins").info("Successfully Imported All Modules ")
+    LOGGER("HarryXSarkar.plugins").info("Successfully Imported All Modules ")
     await userbot.start()
     await Dns.start()
     await Dns.decorators()
-    LOGGER("DnsXMusic").info("DnsXMusic Started Successfully")
+    LOGGER("HarryXSarkar").info("SGFycnlYU2Fya2FyIFN0YXJ0ZWQgU3VjY2VzcyBmdWxs")
     await idle()
 
 
 if __name__ == "__main__":
     asyncio.get_event_loop_policy().get_event_loop().run_until_complete(init())
-    LOGGER("DnsXMusic").info("Stopping DnsXMusic! GoodBye")
+    LOGGER("HarryXSarkar").info("U3RvcHBpbmcgRG5zWE11Y2ljISBHb29kQnl")
