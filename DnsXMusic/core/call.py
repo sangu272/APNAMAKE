@@ -28,9 +28,9 @@ from pytgcalls.types import (
 
 import config
 from strings import get_string
-from DnsXMusic import LOGGER, YouTube, app
-from DnsXMusic.misc import db
-from DnsXMusic.utils.database import (
+from HarryXSarkar import LOGGER, YouTube, app
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_audio_bitrate,
@@ -44,10 +44,10 @@ from DnsXMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from DnsXMusic.utils.exceptions import AssistantErr
-from DnsXMusic.utils.inline.play import stream_markup, telegram_markup
-from DnsXMusic.utils.stream.autoclear import auto_clean
-from DnsXMusic.utils.thumbnails import gen_thumb
+from HarryXSarkar.utils.exceptions import AssistantErr
+from HarryXSarkar.utils.inline.play import stream_markup, telegram_markup
+from HarryXSarkar.utils.stream.autoclear import auto_clean
+from HarryXSarkar.utils.thumbnails import gen_thumb
 
 autoend = {}
 counter = {}
@@ -63,7 +63,7 @@ async def _clear_(chat_id):
 class Call(PyTgCalls):
     def __init__(self):
         self.userbot1 = Client(
-            name="DnsString1",
+            name="HxSString1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -73,7 +73,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot2 = Client(
-            name="DnsString2",
+            name="HxSString2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -83,7 +83,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot3 = Client(
-            name="DnsString3",
+            name="HxSString3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -93,7 +93,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot4 = Client(
-            name="DnsString4",
+            name="HxSString4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -103,7 +103,7 @@ class Call(PyTgCalls):
             cache_duration=100,
         )
         self.userbot5 = Client(
-            name="DnsString5",
+            name="HxSString5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
