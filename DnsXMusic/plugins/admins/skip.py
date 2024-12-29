@@ -15,14 +15,14 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import YouTube, app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import db
-from DnsXMusic.utils.database import get_loop
-from DnsXMusic.utils.decorators import AdminRightsCheck
-from DnsXMusic.utils.inline.play import stream_markup, telegram_markup
-from DnsXMusic.utils.stream.autoclear import auto_clean
-from DnsXMusic.utils.thumbnails import gen_thumb
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.database import get_loop
+from HarryXSarkar.utils.decorators import AdminRightsCheck
+from HarryXSarkar.utils.inline.play import stream_markup, telegram_markup
+from HarryXSarkar.utils.stream.autoclear import auto_clean
+from HarryXSarkar.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -110,7 +110,7 @@ async def skip(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_11"].format(title))
         try:
-            await Dns.skip_stream(chat_id, link, video=status)
+            await HxS.skip_stream(chat_id, link, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
@@ -137,7 +137,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             return await mystic.edit_text(_["call_7"])
         try:
-            await Dns.skip_stream(chat_id, file_path, video=status)
+            await HxS.skip_stream(chat_id, file_path, video=status)
         except Exception:
             return await mystic.edit_text(_["call_7"])
         button = stream_markup(_, videoid, chat_id)
@@ -157,7 +157,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Dns.skip_stream(chat_id, videoid, video=status)
+            await HxS.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         button = telegram_markup(_, chat_id)
@@ -170,7 +170,7 @@ async def skip(cli, message: Message, _, chat_id):
         db[chat_id][0]["markup"] = "tg"
     else:
         try:
-            await Dns.skip_stream(chat_id, queued, video=status)
+            await HxS.skip_stream(chat_id, queued, video=status)
         except Exception:
             return await message.reply_text(_["call_7"])
         if videoid == "telegram":
