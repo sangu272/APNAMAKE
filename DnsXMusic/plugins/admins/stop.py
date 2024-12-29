@@ -12,11 +12,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS, adminlist
 from strings import get_string
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.plugins import extra_plugins_enabled
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.plugins import extra_plugins_enabled
+from HarryXSarkar.utils.database import (
     delete_filter,
     get_cmode,
     get_lang,
@@ -92,6 +92,6 @@ async def stop_music(cli, message: Message):
             else:
                 if message.from_user.id not in admins:
                     return await message.reply_text(_["admin_19"])
-    await Dns.stop_stream(chat_id)
+    await HxS.stop_stream(chat_id)
     await set_loop(chat_id, 0)
     await message.reply_text(_["admin_9"].format(message.from_user.mention))
