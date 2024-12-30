@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import add_off, add_on
-from DnsXMusic.utils.decorators.language import language
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import add_off, add_on
+from HarryXSarkar.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
