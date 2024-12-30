@@ -16,10 +16,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils import get_readable_time
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar import SUDOERS
+from HarryXSarkar.utils import get_readable_time
+from HarryXSarkar.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -27,7 +27,7 @@ from DnsXMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from DnsXMusic.utils.decorators.language import language
+from HarryXSarkar.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")
