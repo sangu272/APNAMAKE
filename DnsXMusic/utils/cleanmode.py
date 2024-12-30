@@ -1,5 +1,5 @@
 from config import LOG_GROUP_ID
-from DnsXMusic import app
+from HarryXSarkar import app
 
 protected_messages = {}
 
