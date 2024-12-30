@@ -19,11 +19,11 @@ import config
 from config import BANNED_USERS, START_IMG_URL
 from config.config import OWNER_ID
 from strings import get_string
-from DnsXMusic import HELPABLE, Telegram, YouTube, app
-from DnsXMusic.misc import SUDOERS, _boot_
-from DnsXMusic.plugins.play.playlist import del_plist_msg
-from DnsXMusic.plugins.sudo.sudoers import sudoers_list
-from DnsXMusic.utils.database import (
+from HarryXSarkar import HELPABLE, Telegram, YouTube, app
+from HarryXSarkar.misc import SUDOERS, _boot_
+from HarryXSarkar.plugins.play.playlist import del_plist_msg
+from HarryXSarkar.plugins.sudo.sudoers import sudoers_list
+from HarryXSarkar.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -33,10 +33,10 @@ from DnsXMusic.utils.database import (
     is_on_off,
     is_served_private_chat,
 )
-from DnsXMusic.utils.decorators.language import LanguageStart
-from DnsXMusic.utils.formatters import get_readable_time
-from DnsXMusic.utils.functions import MARKDOWN, WELCOMEHELP
-from DnsXMusic.utils.inline import alive_panel, private_panel, start_pannel
+from HarryXSarkar.utils.decorators.language import LanguageStart
+from HarryXSarkar.utils.formatters import get_readable_time
+from HarryXSarkar.utils.functions import MARKDOWN, WELCOMEHELP
+from HarryXSarkar.utils.inline import alive_panel, private_panel, start_pannel
 
 from .help import paginate_modules
 
