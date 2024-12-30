@@ -10,7 +10,7 @@
 
 from typing import Dict, List, Union
 
-from DnsXMusic.core.mongo import mongodb
+from HarryXSarkar.core.mongo import mongodb
 
 queriesdb = mongodb.queries
 userdb = mongodb.userstats
