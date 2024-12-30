@@ -17,12 +17,12 @@ from pyrogram.types import CallbackQuery, Message
 
 from config import BANNED_USERS, adminlist, lyrical
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import db
-from DnsXMusic.utils.database import get_authuser_names, get_cmode
-from DnsXMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from DnsXMusic.utils.formatters import alpha_to_int
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.database import get_authuser_names, get_cmode
+from HarryXSarkar.utils.decorators import ActualAdminCB, AdminActual, language
+from HarryXSarkar.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
