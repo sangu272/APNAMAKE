@@ -13,10 +13,10 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database.memorydatabase import get_video_limit
-from DnsXMusic.utils.formatters import convert_bytes
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database.memorydatabase import get_video_limit
+from HarryXSarkar.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 
