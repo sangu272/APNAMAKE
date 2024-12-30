@@ -3,7 +3,7 @@ from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 import config
-from DnsXMusic import app
+from HarryXSarkar import app
 
 TEXT = f"""
 🔒 **Privacy Policy for {app.mention} !**
