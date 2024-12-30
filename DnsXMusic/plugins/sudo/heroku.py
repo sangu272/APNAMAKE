@@ -24,15 +24,15 @@ from pyrogram import filters
 
 import config
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import HAPP, SUDOERS, XCB
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.misc import HAPP, SUDOERS, XCB
+from HarryXSarkar.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from DnsXMusic.utils.decorators.language import language
-from DnsXMusic.utils.pastebin import Dnsbin
+from HarryXSarkar.utils.decorators.language import language
+from HarryXSarkar.utils.pastebin import HxSbin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -51,7 +51,7 @@ async def is_heroku():
 
 
 async def paste_neko(code: str):
-    return await Dnsbin(code)
+    return await HxSbin(code)
 
 
 @app.on_message(
@@ -65,7 +65,7 @@ async def log_(client, message, _):
             if HAPP is None:
                 return await message.reply_text(_["heroku_1"])
             data = HAPP.get_log()
-            link = await Dnsbin(data)
+            link = await HxSbin(data)
             return await message.reply_text(link)
         else:
             if os.path.exists(config.LOG_FILE_NAME):
@@ -312,7 +312,7 @@ async def update_(client, message, _):
             )
     else:
         os.system("pip3 install --no-cache-dir -U -r requirements.txt")
-        os.system(f"kill -9 {os.getpid()} && python3 -m DnsXMusic")
+        os.system(f"kill -9 {os.getpid()} && python3 -m HarryXSarkar)
         exit()
 
 
@@ -340,4 +340,4 @@ async def restart_(_, message):
     await response.edit_text(
         "» ʀᴇsᴛᴀʀᴛ ᴘʀᴏᴄᴇss sᴛᴀʀᴛᴇᴅ, ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ғᴏʀ ғᴇᴡ sᴇᴄᴏɴᴅs ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ sᴛᴀʀᴛs..."
     )
-    os.system(f"kill -9 {os.getpid()} && python3 -m DnsXMusic")
+    os.system(f"kill -9 {os.getpid()} && python3 -m HarryXSarkar")
