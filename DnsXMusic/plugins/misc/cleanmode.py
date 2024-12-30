@@ -19,10 +19,10 @@ from pyrogram.raw import types
 import config
 from config import adminlist, chatstats, clean, userstats
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.cleanmode import protected_messages
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.cleanmode import protected_messages
+from HarryXSarkar.utils.database import (
     get_active_chats,
     get_authuser_names,
     get_client,
@@ -35,8 +35,8 @@ from DnsXMusic.utils.database import (
     update_particular_top,
     update_user_top,
 )
-from DnsXMusic.utils.decorators.language import language
-from DnsXMusic.utils.formatters import alpha_to_int
+from HarryXSarkar.utils.decorators.language import language
+from HarryXSarkar.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
