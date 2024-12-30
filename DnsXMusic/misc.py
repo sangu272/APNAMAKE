@@ -15,7 +15,7 @@ import heroku3
 from pyrogram import filters
 
 import config
-from DnsXMusic.core.mongo import pymongodb
+from HarryXSarkar.core.mongo import pymongodb
 
 from .logging import LOGGER
 
