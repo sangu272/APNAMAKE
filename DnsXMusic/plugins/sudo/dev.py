@@ -23,9 +23,9 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.cleanmode import protect_message
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.cleanmode import protect_message
 
 
 async def aexec(code, client, message):
