@@ -15,20 +15,20 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from DnsXMusic import Carbon, YouTube, app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.misc import db
-from DnsXMusic.utils.database import (
+from HarryXSarkar import Carbon, YouTube, app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.database import (
     add_active_video_chat,
     is_active_chat,
     is_video_allowed,
 )
-from DnsXMusic.utils.exceptions import AssistantErr
-from DnsXMusic.utils.inline.play import queue_markup, stream_markup, telegram_markup
-from DnsXMusic.utils.inline.playlist import close_markup
-from DnsXMusic.utils.pastebin import Dnsbin
-from DnsXMusic.utils.stream.queue import put_queue, put_queue_index
-from DnsXMusic.utils.thumbnails import gen_qthumb, gen_thumb
+from HarryXSarkar.utils.exceptions import AssistantErr
+from HarryXSarkar.utils.inline.play import queue_markup, stream_markup, telegram_markup
+from HarryXSarkar.utils.inline.playlist import close_markup
+from HarryXSarkar.utils.pastebin import HxSbin
+from HarryXSarkar.utils.stream.queue import put_queue, put_queue_index
+from HarryXSarkar.utils.thumbnails import gen_qthumb, gen_thumb
 
 
 async def stream(
@@ -50,7 +50,7 @@ async def stream(
         if not await is_video_allowed(chat_id):
             raise AssistantErr(_["play_7"])
     if forceplay:
-        await Dns.force_stop_stream(chat_id)
+        await HxS.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['playlist_16']}\n\n"
         count = 0
@@ -97,7 +97,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Dns.join_call(
+                await HxS.join_call(
                     chat_id, original_chat_id, file_path, video=status, image=thumbnail
                 )
                 await put_queue(
@@ -183,7 +183,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Dns.join_call(
+            await HxS.join_call(
                 chat_id, original_chat_id, file_path, video=status, image=thumbnail
             )
             await put_queue(
@@ -240,7 +240,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Dns.join_call(chat_id, original_chat_id, file_path, video=None)
+            await HxS.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -290,7 +290,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Dns.join_call(chat_id, original_chat_id, file_path, video=status)
+            await HxS.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -344,7 +344,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Dns.join_call(
+            await HxS.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -400,7 +400,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Dns.join_call(
+            await HxS.join_call(
                 chat_id,
                 original_chat_id,
                 link,
