@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatType
 
 from strings import get_string
-from DnsXMusic import app
-from DnsXMusic.utils import Dnsbin
-from DnsXMusic.utils.database import get_assistant, get_lang
+from HarryXSarkar import app
+from HarryXSarkar.utils import HxSbin
+from HarryXSarkar.utils.database import get_assistant, get_lang
 
 
 @app.on_message(
