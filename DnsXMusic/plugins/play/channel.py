@@ -14,9 +14,9 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.utils.database import set_cmode
-from DnsXMusic.utils.decorators.admins import AdminActual
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import set_cmode
+from HarryXSarkar.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")
