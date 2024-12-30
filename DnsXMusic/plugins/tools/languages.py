@@ -14,9 +14,9 @@ from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string, languages_present
-from DnsXMusic import app
-from DnsXMusic.utils.database import get_lang, set_lang
-from DnsXMusic.utils.decorators import ActualAdminCB, language, languageCB
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import get_lang, set_lang
+from HarryXSarkar.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
