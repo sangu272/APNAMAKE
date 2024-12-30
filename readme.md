@@ -51,7 +51,7 @@ Click the button below to easily deploy **Dns Music Bot** on Heroku!
 
 5. **Run the Bot**
    ```bash
-   python3 -m DnsXMusic
+   python3 -m HarryXSarkar
    ```
 
 6. **Detach from tmux session**
