@@ -24,10 +24,10 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, SONG_DOWNLOAD_DURATION, SONG_DOWNLOAD_DURATION_LIMIT
 from strings import get_command
-from DnsXMusic import YouTube, app
-from DnsXMusic.utils.decorators.language import language, languageCB
-from DnsXMusic.utils.formatters import convert_bytes
-from DnsXMusic.utils.inline.song import song_markup
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.utils.decorators.language import language, languageCB
+from HarryXSarkar.utils.formatters import convert_bytes
+from HarryXSarkar.utils.inline.song import song_markup
 
 # Command
 
