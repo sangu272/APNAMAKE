@@ -17,8 +17,8 @@ from pyrogram.types import (
 from youtubesearchpython.__future__ import VideosSearch
 
 from config import BANNED_USERS
-from DnsXMusic import app
-from DnsXMusic.utils.inlinequery import answer
+from HarryXSarkar import app
+from HarryXSarkar.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
