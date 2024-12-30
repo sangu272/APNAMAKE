@@ -16,10 +16,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS, START_IMG_URL
 from strings import get_command, get_string
-from DnsXMusic import HELPABLE, app
-from DnsXMusic.utils.database import get_lang, is_commanddelete_on
-from DnsXMusic.utils.decorators.language import LanguageStart
-from DnsXMusic.utils.inline.help import private_help_panel
+from HarryXSarkar import HELPABLE, app
+from HarryXSarkar.utils.database import get_lang, is_commanddelete_on
+from HarryXSarkar.utils.decorators.language import LanguageStart
+from HarryXSarkar.utils.inline.help import private_help_panel
 
 ### Command
 HELP_COMMAND = get_command("HELP_COMMAND")
