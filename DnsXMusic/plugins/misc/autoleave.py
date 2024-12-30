@@ -14,9 +14,9 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns, autoend
-from DnsXMusic.utils.database import get_client, is_active_chat, is_autoend
+from HarryXSarkar import app
+from HarryXSarkar.core.call import Dns, autoend
+from HarryXSarkar.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
