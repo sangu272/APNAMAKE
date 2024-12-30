@@ -8,8 +8,8 @@
 # All rights reserved.
 
 from config import LOG, LOG_GROUP_ID
-from DnsXMusic import app
-from DnsXMusic.utils.database import is_on_off
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import is_on_off
 
 
 async def play_logs(message, streamtype):
