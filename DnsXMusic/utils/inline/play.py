@@ -11,7 +11,7 @@ import math
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from DnsXMusic.utils.formatters import time_to_seconds
+from HarryXSarkar.utils.formatters import time_to_seconds
 
 def get_progress_bar(percentage):
     umm = math.floor(percentage)
