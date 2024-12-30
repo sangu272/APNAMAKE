@@ -11,10 +11,10 @@
 from pyrogram import filters
 
 from config import BANNED_USERS
-from DnsXMusic import YouTube, app
-from DnsXMusic.utils.channelplay import get_channeplayCB
-from DnsXMusic.utils.decorators.language import languageCB
-from DnsXMusic.utils.stream.stream import stream
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.utils.channelplay import get_channeplayCB
+from HarryXSarkar.utils.decorators.language import languageCB
+from HarryXSarkar.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)
