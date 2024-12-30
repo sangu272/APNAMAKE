@@ -17,12 +17,12 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import db
-from DnsXMusic.utils import Dnsbin, get_channeplayCB, seconds_to_min
-from DnsXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from DnsXMusic.utils.decorators.language import language, languageCB
-from DnsXMusic.utils.inline import queue_back_markup, queue_markup
+from HarryXSarkar import app
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils import Dnsbin, get_channeplayCB, seconds_to_min
+from HarryXSarkar.utils.database import get_cmode, is_active_chat, is_music_playing
+from HarryXSarkar.utils.decorators.language import language, languageCB
+from HarryXSarkar.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
