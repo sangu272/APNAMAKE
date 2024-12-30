@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
+from HarryXSarkar import app
 from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import add_gban_user, remove_gban_user
-from DnsXMusic.utils.decorators.language import language
+from HarryXSarkar.utils.database import add_gban_user, remove_gban_user
+from HarryXSarkar.utils.decorators.language import language
 
 # Command
 BLOCK_COMMAND = get_command("BLOCK_COMMAND")
