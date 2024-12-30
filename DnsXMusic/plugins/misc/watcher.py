@@ -10,8 +10,8 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
 
 
 @app.on_message(filters.video_chat_started, group=20)
