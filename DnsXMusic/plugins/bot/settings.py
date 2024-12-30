@@ -19,8 +19,8 @@ from pyrogram.types import (
 
 from config import BANNED_USERS, CLEANMODE_DELETE_MINS, OWNER_ID
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import (
     add_nonadmin_chat,
     cleanmode_off,
     cleanmode_on,
@@ -41,9 +41,9 @@ from DnsXMusic.utils.database import (
     set_playmode,
     set_playtype,
 )
-from DnsXMusic.utils.decorators.admins import ActualAdminCB
-from DnsXMusic.utils.decorators.language import language, languageCB
-from DnsXMusic.utils.inline.settings import (
+from HarryXSarkar.utils.decorators.admins import ActualAdminCB
+from HarryXSarkar.utils.decorators.language import language, languageCB
+from HarryXSarkar.utils.inline.settings import (
     audio_quality_markup,
     auth_users_markup,
     cleanmode_settings_markup,
@@ -51,7 +51,7 @@ from DnsXMusic.utils.inline.settings import (
     setting_markup,
     video_quality_markup,
 )
-from DnsXMusic.utils.inline.start import private_panel
+from HarryXSarkar.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
