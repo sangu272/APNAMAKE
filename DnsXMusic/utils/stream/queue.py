@@ -13,7 +13,7 @@ from typing import Union
 
 from config import autoclean, chatstats, userstats
 from config.config import time_to_seconds
-from DnsXMusic.misc import db
+from HarryXSarkar.misc import db
 
 
 async def put_queue(
