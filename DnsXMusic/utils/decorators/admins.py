@@ -13,9 +13,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import adminlist
 from strings import get_string
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
