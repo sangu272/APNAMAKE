@@ -1,13 +1,13 @@
 {
-    "name": "DnsMusic",
+    "name": "HxSMusic",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://envs.sh/wy7.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Dns",
-    "DnsXMusicBot",
+    "HxS",
+    "HarryXSarkar",
     "telegram-bot",
     "pyrogram"
     ],
@@ -16,12 +16,12 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "24912072",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "",
+        "value": "1a9c568007ef51bed8fd2357947e5cb3",
         "required": true
       },
       "BOT_TOKEN": {
@@ -36,12 +36,12 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Dns's database for you.",
-        "value": "",
+        "value": "mongodb+srv://harryashutosh729:harryashutosh729@harry2.xykka.mongodb.net/?retryWrites=true&w=majority&appName=harry2",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "8170572505",
         "required": true
       },
       "STRING_SESSION": {
@@ -61,12 +61,12 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1002092185298",
         "required": true
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/MISH0009/DNS",
+        "value": "https://github.com/sangu272/APNAMAKE",
         "required": true
       },
       "UPSTREAM_BRANCH": {
