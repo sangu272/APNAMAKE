@@ -12,10 +12,10 @@ import asyncio
 from pyrogram.types import InlineKeyboardMarkup
 
 from strings import get_string
-from DnsXMusic.misc import db
-from DnsXMusic.utils.database import get_active_chats, get_lang, is_music_playing
-from DnsXMusic.utils.formatters import seconds_to_min
-from DnsXMusic.utils.inline import stream_markup_timer, telegram_markup_timer
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.database import get_active_chats, get_lang, is_music_playing
+from HarryXSarkar.utils.formatters import seconds_to_min
+from HarryXSarkar.utils.inline import stream_markup_timer, telegram_markup_timer
 
 from ..admins.callback import wrong
 
