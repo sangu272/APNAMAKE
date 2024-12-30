@@ -26,23 +26,23 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtube_search import YoutubeSearch
 
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from DnsXMusic import Carbon, app
-from DnsXMusic.utils.database import (
+from HarryXSarkar import Carbon, app
+from HarryXSarkar.utils.database import (
     delete_playlist,
     get_assistant,
     get_playlist,
     get_playlist_names,
     save_playlist,
 )
-from DnsXMusic.utils.decorators.language import language, languageCB
-from DnsXMusic.utils.inline.playlist import (
+from HarryXSarkar.utils.decorators.language import language, languageCB
+from HarryXSarkar.utils.inline.playlist import (
     botplaylist_markup,
     get_cplaylist_markup,
     get_playlist_markup,
     warning_markup,
 )
-from DnsXMusic.utils.pastebin import Dnsbin
-from DnsXMusic.utils.stream.stream import stream
+from HarryXSarkar.utils.pastebin import HxSbin
+from HarryXSarkar.utils.stream.stream import stream
 
 
 @app.on_message(filters.command(["playlist"]) & ~BANNED_USERS)
