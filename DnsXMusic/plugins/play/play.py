@@ -17,22 +17,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 
 import config
 from config import BANNED_USERS, lyrical
-from DnsXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from DnsXMusic.utils import seconds_to_min, time_to_seconds
-from DnsXMusic.utils.channelplay import get_channeplayCB
-from DnsXMusic.utils.database import is_video_allowed
-from DnsXMusic.utils.decorators.language import languageCB
-from DnsXMusic.utils.decorators.play import PlayWrapper
-from DnsXMusic.utils.formatters import formats
-from DnsXMusic.utils.inline.play import (
+from HarryXSarkar import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from HarryXSarkar.utils import seconds_to_min, time_to_seconds
+from HarryXSarkar.utils.channelplay import get_channeplayCB
+from HarryXSarkar.utils.database import is_video_allowed
+from HarryXSarkar.utils.decorators.language import languageCB
+from HarryXSarkar.utils.decorators.play import PlayWrapper
+from HarryXSarkar.utils.formatters import formats
+from HarryXSarkar.utils.inline.play import (
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from DnsXMusic.utils.inline.playlist import botplaylist_markup
-from DnsXMusic.utils.logger import play_logs
-from DnsXMusic.utils.stream.stream import stream
+from HarryXSarkar.utils.inline.playlist import botplaylist_markup
+from HarryXSarkar.utils.logger import play_logs
+from HarryXSarkar.utils.stream.stream import stream
 
 
 @app.on_message(
