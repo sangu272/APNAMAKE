@@ -12,9 +12,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS
-from DnsXMusic import app
-from DnsXMusic.misc import db
-from DnsXMusic.utils.decorators import AdminRightsCheck
+from HarryXSarkar import app
+from HarryXSarkar.misc import db
+from HarryXSarkar.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(
