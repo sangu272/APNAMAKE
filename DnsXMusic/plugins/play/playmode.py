@@ -13,10 +13,10 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import app
+from HarryXSarkar import app
 from DnsXMusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from DnsXMusic.utils.decorators import language
-from DnsXMusic.utils.inline.settings import playmode_users_markup
+from HarryXSarkar.utils.decorators import language
+from HarryXSarkar.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")
