@@ -12,8 +12,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from config import LOG, LOG_GROUP_ID
-from DnsXMusic import app
-from DnsXMusic.utils.database import delete_served_chat, get_assistant, is_on_off
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import delete_served_chat, get_assistant, is_on_off
 
 
 @app.on_message(filters.new_chat_members)
