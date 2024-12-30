@@ -12,9 +12,9 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command, get_string
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
