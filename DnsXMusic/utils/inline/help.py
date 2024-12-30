@@ -10,7 +10,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import SUPPORT_GROUP
-from DnsXMusic import app
+from HarryXSarkar import app
 
 
 def support_group_markup(_):
