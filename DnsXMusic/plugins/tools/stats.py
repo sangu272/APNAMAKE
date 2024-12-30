@@ -22,11 +22,11 @@ from pytgcalls.__version__ import __version__ as pytgver
 import config
 from config import BANNED_USERS
 from strings import get_command
-from DnsXMusic import YouTube, app
-from DnsXMusic.core.userbot import assistants
-from DnsXMusic.misc import SUDOERS, pymongodb
-from DnsXMusic.plugins import ALL_MODULES
-from DnsXMusic.utils.database import (
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.core.userbot import assistants
+from HarryXSarkar.misc import SUDOERS, pymongodb
+from HarryXSarkar.plugins import ALL_MODULES
+from HarryXSarkar.utils.database import (
     get_global_tops,
     get_particulars,
     get_queries,
@@ -36,8 +36,8 @@ from DnsXMusic.utils.database import (
     get_top_chats,
     get_topp_users,
 )
-from DnsXMusic.utils.decorators.language import language, languageCB
-from DnsXMusic.utils.inline.stats import (
+from HarryXSarkar.utils.decorators.language import language, languageCB
+from HarryXSarkar.utils.inline.stats import (
     back_stats_buttons,
     back_stats_markup,
     get_stats_markup,
