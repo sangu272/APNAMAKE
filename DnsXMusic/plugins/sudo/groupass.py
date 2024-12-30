@@ -11,12 +11,12 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, LOG_GROUP_ID
-from DnsXMusic import app
-from DnsXMusic.core.userbot import assistants
-from DnsXMusic.utils.assistant import get_assistant_details
-from DnsXMusic.utils.assistant import is_avl_assistant as assistant
-from DnsXMusic.utils.database import get_assistant, save_assistant, set_assistant
-from DnsXMusic.utils.decorators import AdminActual
+from HarryXSarkar import app
+from HarryXSarkar.core.userbot import assistants
+from HarryXSarkar.utils.assistant import get_assistant_details
+from HarryXSarkar.utils.assistant import is_avl_assistant as assistant
+from HarryXSarkar.utils.database import get_assistant, save_assistant, set_assistant
+from HarryXSarkar.utils.decorators import AdminActual
 
 
 @app.on_message(filters.command("changeassistant") & ~BANNED_USERS)
