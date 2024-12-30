@@ -22,9 +22,9 @@ from config import PLAYLIST_IMG_URL, PRIVATE_BOT_MODE
 from config import SUPPORT_GROUP as SUPPORT_CHAT
 from config import adminlist
 from strings import get_string
-from DnsXMusic import YouTube, app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import (
+from HarryXSarkar import YouTube, app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import (
     get_assistant,
     get_cmode,
     get_lang,
@@ -35,7 +35,7 @@ from DnsXMusic.utils.database import (
     is_maintenance,
     is_served_private_chat,
 )
-from DnsXMusic.utils.inline import botplaylist_markup
+from HarryXSarkar.utils.inline import botplaylist_markup
 
 links = {}
 
