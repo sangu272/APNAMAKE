@@ -10,9 +10,9 @@
 from pyrogram import filters
 
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import autoend_off, autoend_on
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import autoend_off, autoend_on
 
 # Commands
 AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
