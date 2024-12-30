@@ -8,8 +8,8 @@
 # All rights reserved.
 #
 from strings import get_string
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import get_lang, is_commanddelete_on, is_maintenance
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import get_lang, is_commanddelete_on, is_maintenance
 
 
 def language(mystic):
