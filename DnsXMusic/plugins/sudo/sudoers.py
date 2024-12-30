@@ -13,10 +13,10 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import add_sudo, remove_sudo
-from DnsXMusic.utils.decorators.language import language
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import add_sudo, remove_sudo
+from HarryXSarkar.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")
