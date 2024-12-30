@@ -9,8 +9,8 @@
 #
 
 
-from DnsXMusic import app
-from DnsXMusic.utils.database import get_cmode
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
