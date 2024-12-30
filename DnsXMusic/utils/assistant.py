@@ -8,7 +8,7 @@
 # All rights reserved.
 #
 
-from DnsXMusic.utils.database import get_client
+from HarryXSarkar.utils.database import get_client
 
 
 async def get_assistant_details():
@@ -58,4 +58,4 @@ async def is_avl_assistant():
     if filled_count == 1:
         return True
     else:
-        return False
+        return False
