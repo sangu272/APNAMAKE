@@ -13,11 +13,11 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from config import BANNED_USERS, PING_IMG_URL
-from DnsXMusic import app
-from DnsXMusic.core.call import Dns
-from DnsXMusic.utils import bot_sys_stats
-from DnsXMusic.utils.decorators.language import language
-from DnsXMusic.utils.inline import support_group_markup
+from HarryXSarkar import app
+from HarryXSarkar.core.call import HxS
+from HarryXSarkar.utils import bot_sys_stats
+from HarryXSarkar.utils.decorators.language import language
+from HarryXSarkar.utils.inline import support_group_markup
 
 
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
@@ -28,7 +28,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"].format(app.mention),
     )
     start = datetime.now()
-    pytgping = await Dns.ping()
+    pytgping = await HxS.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
