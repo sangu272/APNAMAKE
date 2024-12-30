@@ -3,8 +3,8 @@ import shutil
 
 from pyrogram import filters
 
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
 
 
 @app.on_message(filters.command("clean") & SUDOERS)
