@@ -20,20 +20,20 @@ from pyrogram.errors import (
 from pyrogram.types import InlineKeyboardMarkup
 
 from config import BANNED_USERS
-from DnsXMusic import app
-from DnsXMusic.utils.database import (
+from HarryXSarkar import app
+from HarryXSarkar.utils.database import (
     get_assistant,
     get_global_tops,
     get_particulars,
     get_userss,
 )
-from DnsXMusic.utils.decorators.language import languageCB
-from DnsXMusic.utils.inline.playlist import (
+from HarryXSarkar.utils.decorators.language import languageCB
+from HarryXSarkar.utils.inline.playlist import (
     botplaylist_markup,
     failed_top_markup,
     top_play_markup,
 )
-from DnsXMusic.utils.stream.stream import stream
+from HarryXSarkar.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 
