@@ -12,10 +12,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from strings import get_command
-from DnsXMusic import app
-from DnsXMusic.misc import SUDOERS
-from DnsXMusic.utils.database import set_video_limit
-from DnsXMusic.utils.decorators.language import language
+from HarryXSarkar import app
+from HarryXSarkar.misc import SUDOERS
+from HarryXSarkar.utils.database import set_video_limit
+from HarryXSarkar.utils.decorators.language import language
 
 VIDEOLIMIT_COMMAND = get_command("VIDEOLIMIT_COMMAND")
 
